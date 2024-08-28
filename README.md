@@ -1,4 +1,16 @@
-**Status:** Maintenance (expect bug fixes and minor updates)
+# Installation
+1. download Mujoco version 2.1 binaries and place it into `~/.mujoco/mujoco210`.
+2. copy and paste the following lines into `~/.bashrc` or `~/.zshrc`
+```
+###################### mujoco-py ######################
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${HOME}/.mujoco/mujoco210/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export MUJOCO_GL=egl
+######################33333333333######################
+```
+
+
 
 # mujoco-py [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://openai.github.io/mujoco-py/build/html/index.html) [![Build Status](https://travis-ci.org/openai/mujoco-py.svg?branch=master)](https://travis-ci.org/openai/mujoco-py)
 
